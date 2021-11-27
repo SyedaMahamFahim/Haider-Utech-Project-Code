@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import data from './data';
-import Basic from './Basic';
-
+// import State from './Components/Hooks/State';
+// import Effect from './Components/Hooks/Effect';
+// import Map from './Components/Hooks/Map';
 const App=()=> {
   
   return (
     <div className="App">
-     {
-       data.map((val,index)=>{
-         return(
-           <>
-           <Basic val={val} index={index}/>
-           </>
-         )
-       })
-     }
+   {/* <State/> */}
+   {/* <Effect/> */}
+   <Map/>
     </div>
   );
 }
