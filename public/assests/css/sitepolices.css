@@ -1,0 +1,36 @@
+/* Breadcrumbs */
+.slider-wrapper {
+    background: #11151b;
+    width: 100%;
+    /* margin-bottom: 20px; */
+    position: relative;
+    padding-top: 120px;
+}
+/*  Breadcrumbs*/
+.privacy-banner {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 0 0;
+}
+/* Breadcrumbs h2 */
+.privacy-banner h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+/* Site Policy Main Content  */
+.main-content-sec {
+    padding: 70px 0;
+}
+.main-content-sec p {
+    color: #6b6b6b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.main-content-sec p strong {
+    color: #6b6b6b;
+}

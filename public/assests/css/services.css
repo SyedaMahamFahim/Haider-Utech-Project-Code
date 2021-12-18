@@ -1,0 +1,191 @@
+.main-paper-hlp-dsk-sec {
+    padding: 70px 0;
+    background-color: #fff;
+    text-align: center;
+}
+.main-paper-hlp-dsk-sec h2 {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    letter-spacing: 0;
+    font-size: 36px;
+    line-height: 42px;
+}
+.main-paper-hlp-dsk-sec h6{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+}
+.main-paper-hlp-dsk-sec p{
+    color: #9c9c9c;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+.main-paper-hlp-dsk-sec a {
+    padding: 14px 60px;
+    margin-right: 20px;
+}
+
+/* Essay Editing Adventure */
+.main-overcme-sec {
+    padding: 70px 0;
+    background-color: #fff;
+}
+.ovr-heading {
+    text-align: center;
+}
+.ovr-heading h2 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    letter-spacing: 0;
+    font-size: 36px;
+    line-height: 42px;
+}
+.ovr-heading p {
+    color: #9c9c9c;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
+}
+.impr-box1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.impr-box1 i {
+    font-size: 45px !important;
+    line-height: 45px;
+    width: 45px;
+    color: #1062dc;
+    margin: 0px 0 30px 0;
+}
+.impr-box1 p {
+    color: #000;
+    font-size: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+/* Essay Editing Help */
+.main-paper-hlp-dsk-sec.trms-sec {
+    background-color: #07a4e3;
+}
+.main-paper-hlp-dsk-sec.trms-sec h2 {
+    color: #fff;
+    margin-bottom: 35px;
+}
+.main-paper-hlp-dsk-sec.trms-sec p {
+    color: #fff;
+}
+.main-paper-hlp-dsk-sec p {
+    color: #9c9c9c;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+/* Essay editing Instant Help */
+.main-qty-edi-sec {
+    padding: 20px 0 0px 0;
+    background-color: #fff;
+}
+.qty-heading {
+    padding: 35px 0 0 0;
+}
+.main-qty-edi-sec h2 {
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    letter-spacing: 0;
+    font-size: 36px;
+    line-height: 42px;
+}
+.main-qty-edi-sec p {
+    color: #9c9c9c;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* Assignment css */
+/* h1 assignment */
+.p3 {
+    margin-top: 40px !important;
+}
+.p4 {
+    margin: 25px 0 !important;
+}
+.p5 {
+    margin: 0px 0 5px 0 !important;
+}
+
+/* Plagiarism Checker */
+.main-box {
+    border-radius: 5px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 20px;
+    margin-top: -33px;
+    background-color: #fff;
+}
+.Faculty {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+.Faculty-content {
+    display: inline-block;
+    width: 78%;
+}
+.Faculty-content h3 {
+    font-size: 18px;
+    color: #000;
+    color: #000;
+    font-family: "GothamPro",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-weight: bold;
+}
+.Faculty-content p {
+    color: #9c9c9c;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.checking h4 {
+    font-weight: 700;
+    padding-top: 60px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+.checking p {
+    text-align: center;
+    color: #9c9c9c;
+    font-size: 18px;
+}
+
+/* quality-editing Pa */
+.quality-editing {
+    background-color: #03a2f6;
+}
+.helpnow {
+    padding: 60px 0px;
+}
+.helpnow h3 {
+    color: #fff;
+}
+.helpnow p {
+    color: #fff;
+    font-size: 18px;
+}
