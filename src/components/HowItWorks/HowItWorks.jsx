@@ -34,7 +34,7 @@ const HowItWorkContent=({content})=>{
     <>
     <div className="col-md-3">
               <div className="circle">
-                <img src={content.img}/>
+                <img src={content.img} alt={content.title}/>
               </div>
               <div className="circle-line">
                 <h3>{content.title}</h3>

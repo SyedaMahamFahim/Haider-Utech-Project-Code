@@ -5,6 +5,7 @@ import WhatWeDoData from "./StaticPageData/WhatWeDoData";
 import WhatIsIncluded from "./StaticPageData/WhatIsIncluded";
 import ExpertEditing from "../components/ExpertEditing/ExpertEditing";
 import Contact from "../components/Contact/Contact";
+import { Link } from "react-router-dom";
 const Index = () => {
   return (
     <>
@@ -28,12 +29,12 @@ const Index = () => {
                           PAPERS!
                         </span>
                       </h1>
-                      <a className="btn-theme-yellow">
+                      <Link to="/" className="btn-theme-yellow">
                         <i className="fa fa-comments-o" /> Chat With Our Expert
-                      </a>
-                      <a className="btncontact btn-theme-blue gotocontact">
+                      </Link >
+                      <Link to="/" className="btncontact btn-theme-blue gotocontact">
                         <i className="fa fa-tty" /> Let's Get Started
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-lg-4 offset-lg-2 col-md-4 offset-md-2">
@@ -114,10 +115,10 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-              <img src="./assests/images/bark.svg" />
+              <img src="./assests/images/bark.svg" alt="bark.svg" />
               <div className="bark-star">
                 <p>Bark</p>
-                <img className="stars" src="./assests/images/stars-45.png" />
+                <img className="stars" src="./assests/images/stars-45.png" alt="stars-45"/>
               </div>
               <div className="numbers">
                 <p>
@@ -127,10 +128,10 @@ const Index = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <img src="./assests/images/trustpilot.svg" />
+              <img src="./assests/images/trustpilot.svg" alt="trustpilot" />
               <div className="bark-star">
                 <p>Trustpilot</p>
-                <img className="stars" src="./assests/images/stars-45.png" />
+                <img className="stars" src="./assests/images/stars-45.png"  alt="trustpilot"/>
               </div>
               <div className="numbers">
                 <p>
@@ -140,10 +141,10 @@ const Index = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <img src="./assests/images/sitejabber.svg" />
+              <img src="./assests/images/sitejabber.svg" alt=""/>
               <div className="bark-star">
                 <p>Sitejabber</p>
-                <img className="stars" src="./assests/images/stars-45.png" />
+                <img className="stars" src="./assests/images/stars-45.png" alt="" />
               </div>
               <div className="numbers">
                 <p>
@@ -153,10 +154,10 @@ const Index = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <img src="./assests/images/reviews-icon.png" />
+              <img src="./assests/images/reviews-icon.png"  alt=""/>
               <div className="bark-star">
                 <p>Reviews.io</p>
-                <img className="stars" src="./assests/images/stars-45.png" />
+                <img className="stars" src="./assests/images/stars-45.png"  alt=""/>
               </div>
               <div className="numbers">
                 <p>
@@ -173,7 +174,7 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h2>What’s Included?</h2>
+              <h2>What Included?</h2>
               <p>
                 We guarantee that your custom editing will not only be delivered
                 on time but
@@ -217,21 +218,21 @@ const Index = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="butons">
-                <a href className="gotocontact">
+                <Link to="/" className="gotocontact">
                   SIGN UP
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4">
               <div className="chat">
-                <a className="btn-theme-blue">
+                <Link to="/" className="btn-theme-blue">
                   <i className="fa fa-comments-o" /> Chat With Our Expert
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4">
               <div className="num">
-                <a href>+44 1256 274369</a>
+                <Link to="/">+44 1256 274369</Link>
               </div>
             </div>
           </div>
@@ -256,7 +257,7 @@ const Index = () => {
               </div>
               <div className="col-md-6">
                 <div className="right-img">
-                  <img src="./assests/images/books.png" width="300px" />
+                  <img src="./assests/images/books.png" width="300px" alt=""/>
                 </div>
               </div>
               <h3>Our Knowledge in proposing Paper Help through Skilful Editing &amp; Proofreading Services span across below
@@ -271,7 +272,7 @@ const Index = () => {
                         <div className="col-6 edt-slider">
                           <div className="lis">
                             <div className="headerr">
-                              <img src="./assests/images/dissertation.png" />
+                              <img src="./assests/images/dissertation.png" alt=""/>
                               <h4>Dissertations</h4>
                             </div>
                             <div className="boddy">
@@ -284,7 +285,7 @@ const Index = () => {
                         <div className="col-6 edt-slider">
                           <div className="lis">
                             <div className="headerr">
-                              <img src="./assests/images/capstone.png" />
+                              <img src="./assests/images/capstone.png" alt="" />
                               <h4>Capstone</h4>
                             </div>
                             <div className="boddy">
@@ -303,7 +304,7 @@ const Index = () => {
                         <div className="col-6 edt-slider">
                           <div className="lis">
                             <div className="headerr">
-                              <img src="./assests/images/theses.png" />
+                              <img src="./assests/images/theses.png" alt=""/>
                               <h4>Theses</h4>
                             </div>
                             <div className="boddy">
@@ -316,7 +317,7 @@ const Index = () => {
                         <div className="col-6 edt-slider">
                           <div className="lis">
                             <div className="headerr">
-                              <img src="./assests/images/assignments.png" />
+                              <img src="./assests/images/assignments.png" alt=""/>
                               <h4>Assignments</h4>
                             </div>
                             <div className="boddy">
@@ -330,21 +331,12 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> */}
+                
               </div>
             </div>
             <div className="text-center">
-              <a className="btn-theme-yellow"><i className="fa fa-comments-o" /> Chat With Our Expert</a>
-              <a className="btncontact btn-theme-blue gotocontact"><i className="fa fa-tty" /> Let's Get Started</a>
+              <Link to="/" className="btn-theme-yellow"><i className="fa fa-comments-o" /> Chat With Our Expert</Link>
+              <Link to="/" className="btncontact btn-theme-blue gotocontact"><i className="fa fa-tty" /> Let's Get Started</Link>
             </div>
           </div>
         </section>
@@ -361,10 +353,10 @@ const Index = () => {
                 </div>
               </div>
               <div className="col-md-3 ">
-                <img src="./assests/images/bark.svg" />
+                <img src="./assests/images/bark.svg" alt=""/>
                 <div className="bark-star-1">
                   <p>Bark</p>
-                  <img className="stars-1" src="./assests/images/stars-45.png" />
+                  <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
                 </div>
                 <div className="numbers-1">
                   <p>4.7
@@ -373,10 +365,10 @@ const Index = () => {
                 </div>
               </div>
               <div className="col-md-3">
-                <img src="./assests/images/trustpilot.svg" />
+                <img src="./assests/images/trustpilot.svg" alt=""/>
                 <div className="bark-star-1">
                   <p>Trustpilot</p>
-                  <img className="stars-1" src="./assests/images/stars-45.png" />
+                  <img className="stars-1" src="./assests/images/stars-45.png" alt=""/>
                 </div>
                 <div className="numbers-1">
                   <p>8.9
@@ -385,10 +377,10 @@ const Index = () => {
                 </div>
               </div>
               <div className="col-md-3">
-                <img src="./assests/images/sitejabber.svg" />
+                <img src="./assests/images/sitejabber.svg" alt="" />
                 <div className="bark-star-1">
                   <p>Sitejabber</p>
-                  <img className="stars-1" src="./assests/images/stars-45.png" />
+                  <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
                 </div>
                 <div className="numbers-1">
                   <p>4.4
@@ -415,7 +407,7 @@ const Index = () => {
                       <div className="row ">
                         <div className="col-3 my-auto text-center pt-5">
                           <div className="inner-testimonial">
-                            <img src="./assests/images/eb-4.svg" />
+                            <img src="./assests/images/eb-4.svg" alt=""/>
                           </div>
                           <div className="clearfix">
                           </div>
@@ -448,7 +440,7 @@ const Index = () => {
                       <div className="row ">
                         <div className="col-3 my-auto text-center pt-5">
                           <div className="inner-testimonial">
-                            <img src="./assests/images/eb-4.svg" />
+                            <img src="./assests/images/eb-4.svg" alt=""/>
                           </div>
                           <div className="clearfix">
                           </div>
@@ -481,7 +473,7 @@ const Index = () => {
                       <div className="row ">
                         <div className="col-3 my-auto text-center pt-5">
                           <div className="inner-testimonial">
-                            <img src="./assests/images/eb-4.svg" />
+                            <img src="./assests/images/eb-4.svg" alt=""/>
                           </div>
                           <div className="clearfix">
                           </div>
@@ -532,7 +524,7 @@ const WhatWeDoContent = ({content}) => {
      <div className="col-md-4">
               <div className="row">
                 <div className="col-md-2">
-                  <img src={content.img} />
+                  <img src={content.img} alt={content.title} />
                 </div>
                 <div className="col-md-10">
                   <h3> {content.title}</h3>
@@ -552,7 +544,7 @@ const WhatIsIncludedContent=({content})=>{
     <>
     <div className="col-lg-3">
               <div className="faculty">
-                <img src={content.img}/>
+                <img src={content.img} alt={content.title}/>
                 <h3>{content.title}</h3>
                 <p>
                 {content.desc}

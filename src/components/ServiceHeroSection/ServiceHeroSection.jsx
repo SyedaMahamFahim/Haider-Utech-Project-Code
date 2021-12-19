@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ServiceHeroSection = ({ title, imgUrl }) => {
   return (
@@ -12,10 +13,10 @@ const ServiceHeroSection = ({ title, imgUrl }) => {
                   <div className="col-lg-6 col-md-6">
                     <div className="home-banner-content">
                       <h1>{title}</h1>
-                      <a className="btn-theme-yellow"><i className="fa fa-comments-o" /> Chat With Our
-                        Expert</a>
-                      <a className="btncontact btn-theme-blue gotocontact"><i className="fa fa-tty" /> Let's Get
-                        Started</a>
+                      <Link to="/"className="btn-theme-yellow"><i className="fa fa-comments-o" /> Chat With Our
+                        Expert</Link>
+                      <Link to="/" className="btncontact btn-theme-blue gotocontact"><i className="fa fa-tty" /> Let's Get
+                        Started</Link>
                     </div>
                   </div>
                   <div className="col-lg-4 offset-lg-2 col-md-4 offset-md-2">

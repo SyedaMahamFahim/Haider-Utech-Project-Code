@@ -1,38 +1,37 @@
 import React from 'react'
-import LOGO from '../../images/logo-paperhelpdesk.svg'
-
+import { Link } from 'react-router-dom'
 const MobileHeader = () => {
     return (
         <>
              <section className="mobile-header">
         <nav className="navbar navbar-light bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand">
-              <img className="mobile-logo" src={LOGO} alt="*" />
-            </a>
+            <Link to="/" className="navbar-brand">
+              <img className="mobile-logo" src="./assests/images/logo-paperhelpdesk.svg" alt="*" />
+            </Link>
             <div className="d-flex">
-              <a className="mobile-bar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <Link to="/" className="mobile-bar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i className="fas fa-bars" />
-              </a>
+              </Link>
               <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div className="offcanvas-header">
-                  <img className="img-fluid" src={LOGO} alt="*" width="250px" />
+                  <img className="img-fluid" src="./assests/images/logo-paperhelpdesk.svg" alt="*" width="250px" />
                   <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" />
                 </div>
                 <div className="offcanvas-body">
                   <div>
                     <ul className="mobile-ul">
                       <li className="mobile-li">
-                        <a href="/essayediting.html">Essay Editing</a>
+                        <Link to="/eassy-editing">Essay Editing</Link>
                       </li>
                       <li className="mobile-li">
-                        <a href="/assignmentediting.html">Assignment Editing</a>
+                        <Link to="/assignment-editing">Assignment Editing</Link>
                       </li>
                       <li className="mobile-li">
-                        <a href="/dissertationediting.html">Dissertation Editing</a>
+                        <Link to="/dissertation-editing">Dissertation Editing</Link>
                       </li>
                       <li className="mobile-li">
-                        <a href="/thesisediting.html">Thesis Editing</a>
+                        <Link to="/thesis-editing">Thesis Editing</Link>
                       </li>
                     </ul>
                   </div>

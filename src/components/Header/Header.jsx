@@ -9,14 +9,14 @@ const Header = () => {
             <div className="row">
               <div className="col-lg-5">
                 <div className="emailsec">
-                  <Link to="mailto: support@paperhelpdesk.co"><i className="fas fa-envelope" /> support@paperhelpdesk.co</Link>
+                  <Link to="/"><i className="fas fa-envelope" /> support@paperhelpdesk.co</Link>
                 </div>
               </div>
               <div className="col-lg-7">
                 <ul className="top-info-list">
-                  <li><Link to="tel:+441616603238 "><span><img className="flag" src='./assests/images/uk-flag.png' /></span>
+                  <li><Link to="/"><span><img className="flag" src='./assests/images/uk-flag.png' alt=''/></span>
                       +44-161-660-3238 </Link></li>
-                  <li><Link to="tel:+12132212855"><span><img className="flag" src='./assests/images/usa-flag.png' /></span> +1-213-221-2855
+                  <li><Link to="/" ><span><img className="flag" src='./assests/images/usa-flag.png' alt=''/></span> +1-213-221-2855
                     </Link></li>
                   <li><i className="fas fa-comments" /> Live Chat </li>
                   <li><Link to="/" className="btncontact btn-main gotocontact">Let's Get Started</Link></li>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const EssayEditingHelp = ({title,paraOne,paraTwo}) => {
     return (
@@ -12,9 +13,9 @@ const EssayEditingHelp = ({title,paraOne,paraTwo}) => {
               <p >{paraOne}</p>
               <p >{paraTwo}</p>
               <br /><br />
-              <a className="btncontact btn-theme-light-blue" ><i className="fa fa-user-o"  /> Sign Up</a>
-              <a target="_self" className="btn-theme-yellow" ><i className="fa fa-comments-o"  /> Chat With Our Expert</a>
-              <a className="btncontact btn-theme-light-blue gotocontact" ><i className="fa fa-tty"  /> Let's Get Started</a>
+              <Link to="/" className="btncontact btn-theme-light-blue" ><i className="fa fa-user-o"  /> Sign Up</Link>
+              <Link to="/"  className="btn-theme-yellow" ><i className="fa fa-comments-o"  /> Chat With Our Expert</Link>
+              <Link to="/" className="btncontact btn-theme-light-blue gotocontact" ><i className="fa fa-tty"  /> Let's Get Started</Link>
             </div>
           </div>
         </div>

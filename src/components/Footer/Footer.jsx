@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -30,10 +31,10 @@ const Footer = () => {
               <div className="col-lg-3 col-md-6">
                 <h3 className="xshide">Site Polices</h3>
                 <ul className="linkinglist">
-                  <li><a href="/privacypolicy.html">Privacy Policy</a></li>
-                  <li><a href="/revisionpolicy.html">Revision Policy</a></li>
-                  <li><a href="/termsandconditions.html">Term And Condition</a></li>
-                  <li><a href="/moneybackguarantee.html">Money Back Guarantee</a></li>
+                  <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                  <li><Link to="/revision-policy">Revision Policy</Link></li>
+                  <li><Link to="/terms-and-conditions">Term And Condition</Link></li>
+                  <li><Link to="/money-back-guarantee">Money Back Guarantee</Link></li>
                 </ul>
               </div>
               <div className="col-lg-3 col-md-6">

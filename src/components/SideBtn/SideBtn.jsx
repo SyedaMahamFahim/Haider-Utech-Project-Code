@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SideBtn = () => {
     return (
         <>
             <div className="side-butn">
-        <a href="/plagiarismchecker.html"> GET FREE TURNITIN REPORT </a>
+        <Link to="/plagiarism-checker"> GET FREE TURNITIN REPORT </Link>
       </div>
         </>
     )
