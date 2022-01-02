@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
 
 const State = () => {
-    const [counter,setCounter] =useState(0)
+    const [counter,setCounter] =useState(0)  
+    // counter -- variable
+    // setCounter --Function
+    // useState(initial value)
 
 
     return (
