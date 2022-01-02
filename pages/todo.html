@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    li{
+        text-align: center;
+        list-style: none;
+    }
+    .center{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Crud</h1>
+    <ul>
+        <li>C - Create</li>
+        <li>R - Read</li>
+        <li>U - Update</li>
+        <li>D - Delete</li>
+    </ul>
+    <br>
+    <br>
+    <h2>ENTER TASK</h2>
+    <div class="center">
+    <input type="text" id="task">
+    <button onClick="CrudOperation()">ADD</button>
+
+</div>
+<script>
+    const CrudOperation=()=>(
+        let AllTasks[]
+        let getTask=document.getElementById('task').ariaValueMax
+        if(getTask) return alert("Kindly , enter task");
+        AllTasks.push(getTask)
+        console.log()
+    )
+</script>
+</body>
+</html>

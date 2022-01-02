@@ -1,0 +1,50 @@
+body{
+    font-family: sans-serif;
+}
+.btn-success{
+    background-color: rgb(233, 74, 74);
+}
+.class-class{
+    -webkit-text-stroke: rgb(233, 74, 74) 2px;
+    color: white;
+}
+.nav-hover:hover{
+    background: red;
+    border-radius: 5px;
+    color: white;
+}
+.nav-hover2:hover{
+    background: lightseagreen;
+    border-radius: 5px;
+    color: white;
+}
+.far fa-user{
+    width: 50px;
+    height: 450px;
+}
+.open-sans{
+    font-family: sans-serif;
+}
+.footer-h1{
+    font-weight: bolder;
+}
+.foot{
+    background: black;
+    color: rgb(233, 68, 68);
+}
+.footer-p{
+    color: white;
+}
+.not{
+    font-weight: bolder;
+    color: white;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.footer-link:hover{
+    color: white;
+    
+}
