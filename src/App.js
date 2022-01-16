@@ -2,12 +2,13 @@ import './App.css';
 import React from 'react';
 import Config from './Configuration/Config';
 import { Link } from 'react-router-dom'
+import State from './Components/NewReactSeries/State';
 
 const App = () => {
 
   return (
     <div className="App">
-
+{/* 
       <Config />
       <ul>
 
@@ -23,7 +24,9 @@ const App = () => {
         <li>
           <Link to="/conditional-rendering">Condition</Link>
         </li>
-      </ul>
+      </ul> */}
+
+      <State/>
     </div>
   );
 }
