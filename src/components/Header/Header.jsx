@@ -30,7 +30,7 @@ const Header = () => {
             <div className="row">
               <div className="col-lg-2 logo-area">
                 <div className="logo">
-                  <Link to="/">
+                  <Link to="/PaperHelpDesk">
                     <img className="img-fluid" src='./assests/images/logo-paperhelpdesk.svg' alt="*" />
                   </Link>
                 </div>

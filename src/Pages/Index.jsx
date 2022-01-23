@@ -4,6 +4,7 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 import WhatWeDoData from "./StaticPageData/WhatWeDoData";
 import WhatIsIncluded from "./StaticPageData/WhatIsIncluded";
 import ExpertEditing from "../components/ExpertEditing/ExpertEditing";
+import RatingSectionData from "./StaticPageData/RatingSectionData";
 import Contact from "../components/Contact/Contact";
 import { Link } from "react-router-dom";
 const Index = () => {
@@ -114,11 +115,21 @@ const Index = () => {
       <section className="bark-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+          
+          {
+              RatingSectionData.map((content, index) => {
+                return (
+                  <>
+                    <RatingSection content={content} key={index} />
+                  </>
+                )
+              })
+            }
+            {/* <div className="col-md-3">
               <img src="./assests/images/bark.svg" alt="bark.svg" />
               <div className="bark-star">
                 <p>Bark</p>
-                <img className="stars" src="./assests/images/stars-45.png" alt="stars-45"/>
+                <img className="stars" src="./assests/images/stars-45.png" alt="stars-45" />
               </div>
               <div className="numbers">
                 <p>
@@ -131,7 +142,7 @@ const Index = () => {
               <img src="./assests/images/trustpilot.svg" alt="trustpilot" />
               <div className="bark-star">
                 <p>Trustpilot</p>
-                <img className="stars" src="./assests/images/stars-45.png"  alt="trustpilot"/>
+                <img className="stars" src="./assests/images/stars-45.png" alt="trustpilot" />
               </div>
               <div className="numbers">
                 <p>
@@ -141,7 +152,7 @@ const Index = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <img src="./assests/images/sitejabber.svg" alt=""/>
+              <img src="./assests/images/sitejabber.svg" alt="" />
               <div className="bark-star">
                 <p>Sitejabber</p>
                 <img className="stars" src="./assests/images/stars-45.png" alt="" />
@@ -154,10 +165,10 @@ const Index = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <img src="./assests/images/reviews-icon.png"  alt=""/>
+              <img src="./assests/images/reviews-icon.png" alt="" />
               <div className="bark-star">
                 <p>Reviews.io</p>
-                <img className="stars" src="./assests/images/stars-45.png"  alt=""/>
+                <img className="stars" src="./assests/images/stars-45.png" alt="" />
               </div>
               <div className="numbers">
                 <p>
@@ -165,7 +176,7 @@ const Index = () => {
                   <sup>/5</sup>
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -185,10 +196,10 @@ const Index = () => {
           </div>
           <div className="row">
             {
-              WhatIsIncluded.map((content,index)=>{
-                return(
+              WhatIsIncluded.map((content, index) => {
+                return (
                   <>
-                  <WhatIsIncludedContent content={content} key={index}/>
+                    <WhatIsIncludedContent content={content} key={index} />
                   </>
                 )
               })
@@ -206,10 +217,10 @@ const Index = () => {
           </div>
           <div className="row">
             {
-              WhatWeDoData.map((content,index)=>{
-                return(
+              WhatWeDoData.map((content, index) => {
+                return (
                   <>
-                  <WhatWeDoContent content={content} key={index}/>
+                    <WhatWeDoContent content={content} key={index} />
                   </>
                 )
               })
@@ -242,315 +253,334 @@ const Index = () => {
       <CallToAction />
       {/* How Its Works */}
       <HowItWorks />
-       {/* Editing And Proof */}
-       <section className="editingproof">
-          <div className="container ">
-            <div className="row">
-              <div className="col-lg-6">
-                <h2>Editing and Proofreading</h2>
-                <p>When it comes to academic writing, stroking your ideas on paper is only the first step. You also need to
-                  strike the correct tone, persuade your readers of your opinions, and follow the values and conventions of
-                  your field.<br /><br />Fortunately, we are here to assist! Our team of academic editors can support you express
-                  your concepts and respect the procedures of academic writing, so you can hand in your paper with
-                  self-assurance. We can edit and proof read all your study-related documents, with 100% happiness assured.
+      {/* Editing And Proof */}
+      <section className="editingproof">
+        <div className="container ">
+          <div className="row">
+            <div className="col-lg-6">
+              <h2>Editing and Proofreading</h2>
+              <p>When it comes to academic writing, stroking your ideas on paper is only the first step. You also need to
+                strike the correct tone, persuade your readers of your opinions, and follow the values and conventions of
+                your field.<br /><br />Fortunately, we are here to assist! Our team of academic editors can support you express
+                your concepts and respect the procedures of academic writing, so you can hand in your paper with
+                self-assurance. We can edit and proof read all your study-related documents, with 100% happiness assured.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <div className="right-img">
+                <img src="./assests/images/books.png" width="300px" alt="" />
+              </div>
+            </div>
+            <h3>Our Knowledge in proposing Paper Help through Skilful Editing &amp; Proofreading Services span across below
+              listed areas;</h3>
+          </div>
+          <div className="service-slider">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" interval={3000}>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="container">
+                    <div className="row edt-prf-row">
+                      <div className="col-6 edt-slider">
+                        <div className="lis">
+                          <div className="headerr">
+                            <img src="./assests/images/dissertation.png" alt="" />
+                            <h4>Dissertations</h4>
+                          </div>
+                          <div className="boddy">
+                            <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
+                              the dissertation. Our website will provide you the paper which will meet the standard
+                              dissertation criteria, along with maintaining its uniqueness.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-6 edt-slider">
+                        <div className="lis">
+                          <div className="headerr">
+                            <img src="./assests/images/capstone.png" alt="" />
+                            <h4>Capstone</h4>
+                          </div>
+                          <div className="boddy">
+                            <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
+                              the dissertation. Our website will provide you the paper which will meet the standard
+                              dissertation criteria, along with maintaining its uniqueness.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="container">
+                    <div className="row edt-prf-row">
+                      <div className="col-6 edt-slider">
+                        <div className="lis">
+                          <div className="headerr">
+                            <img src="./assests/images/theses.png" alt="" />
+                            <h4>Theses</h4>
+                          </div>
+                          <div className="boddy">
+                            <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
+                              the dissertation. Our website will provide you the paper which will meet the standard
+                              dissertation criteria, along with maintaining its uniqueness.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-6 edt-slider">
+                        <div className="lis">
+                          <div className="headerr">
+                            <img src="./assests/images/assignments.png" alt="" />
+                            <h4>Assignments</h4>
+                          </div>
+                          <div className="boddy">
+                            <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
+                              the dissertation. Our website will provide you the paper which will meet the standard
+                              dissertation criteria, along with maintaining its uniqueness.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className="text-center">
+            <Link to="/" className="btn-theme-yellow"><i className="fa fa-comments-o" /> Chat With Our Expert</Link>
+            <Link to="/" className="btncontact btn-theme-blue gotocontact"><i className="fa fa-tty" /> Let's Get Started</Link>
+          </div>
+        </div>
+      </section>
+      {/* Reviews Section */}
+      <section className="bark-sec-1">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-12 text-center">
+              <div className="hding">
+                <h3>Reviews, Comments and Love From
+                  <br />
+                  Paper Help Desk Customers and Community
+                </h3>
+              </div>
+            </div>
+            <div className="col-md-3 ">
+              <img src="./assests/images/bark.svg" alt="" />
+              <div className="bark-star-1">
+                <p>Bark</p>
+                <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
+              </div>
+              <div className="numbers-1">
+                <p>4.7
+                  <sup>/5</sup>
                 </p>
               </div>
-              <div className="col-md-6">
-                <div className="right-img">
-                  <img src="./assests/images/books.png" width="300px" alt=""/>
-                </div>
-              </div>
-              <h3>Our Knowledge in proposing Paper Help through Skilful Editing &amp; Proofreading Services span across below
-                listed areas;</h3>
             </div>
-            <div className="service-slider">
-              <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" interval={3000}>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="container">
-                      <div className="row edt-prf-row">
-                        <div className="col-6 edt-slider">
-                          <div className="lis">
-                            <div className="headerr">
-                              <img src="./assests/images/dissertation.png" alt=""/>
-                              <h4>Dissertations</h4>
-                            </div>
-                            <div className="boddy">
-                              <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
-                                the dissertation. Our website will provide you the paper which will meet the standard
-                                dissertation criteria, along with maintaining its uniqueness.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-6 edt-slider">
-                          <div className="lis">
-                            <div className="headerr">
-                              <img src="./assests/images/capstone.png" alt="" />
-                              <h4>Capstone</h4>
-                            </div>
-                            <div className="boddy">
-                              <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
-                                the dissertation. Our website will provide you the paper which will meet the standard
-                                dissertation criteria, along with maintaining its uniqueness.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="container">
-                      <div className="row edt-prf-row">
-                        <div className="col-6 edt-slider">
-                          <div className="lis">
-                            <div className="headerr">
-                              <img src="./assests/images/theses.png" alt=""/>
-                              <h4>Theses</h4>
-                            </div>
-                            <div className="boddy">
-                              <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
-                                the dissertation. Our website will provide you the paper which will meet the standard
-                                dissertation criteria, along with maintaining its uniqueness.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-6 edt-slider">
-                          <div className="lis">
-                            <div className="headerr">
-                              <img src="./assests/images/assignments.png" alt=""/>
-                              <h4>Assignments</h4>
-                            </div>
-                            <div className="boddy">
-                              <p>Our website Paper Help Desk is the best possible answer to meet the professional demands of
-                                the dissertation. Our website will provide you the paper which will meet the standard
-                                dissertation criteria, along with maintaining its uniqueness.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
+            <div className="col-md-3">
+              <img src="./assests/images/trustpilot.svg" alt="" />
+              <div className="bark-star-1">
+                <p>Trustpilot</p>
+                <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
+              </div>
+              <div className="numbers-1">
+                <p>8.9
+                  <sup>/10</sup>
+                </p>
               </div>
             </div>
-            <div className="text-center">
-              <Link to="/" className="btn-theme-yellow"><i className="fa fa-comments-o" /> Chat With Our Expert</Link>
-              <Link to="/" className="btncontact btn-theme-blue gotocontact"><i className="fa fa-tty" /> Let's Get Started</Link>
-            </div>
-          </div>
-        </section>
-        {/* Reviews Section */}
-        <section className="bark-sec-1">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-12 text-center">
-                <div className="hding">
-                  <h3>Reviews, Comments and Love From
-                    <br />
-                    Paper Help Desk Customers and Community
-                  </h3>
-                </div>
+            <div className="col-md-3">
+              <img src="./assests/images/sitejabber.svg" alt="" />
+              <div className="bark-star-1">
+                <p>Sitejabber</p>
+                <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
               </div>
-              <div className="col-md-3 ">
-                <img src="./assests/images/bark.svg" alt=""/>
-                <div className="bark-star-1">
-                  <p>Bark</p>
-                  <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
-                </div>
-                <div className="numbers-1">
-                  <p>4.7
-                    <sup>/5</sup>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <img src="./assests/images/trustpilot.svg" alt=""/>
-                <div className="bark-star-1">
-                  <p>Trustpilot</p>
-                  <img className="stars-1" src="./assests/images/stars-45.png" alt=""/>
-                </div>
-                <div className="numbers-1">
-                  <p>8.9
-                    <sup>/10</sup>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <img src="./assests/images/sitejabber.svg" alt="" />
-                <div className="bark-star-1">
-                  <p>Sitejabber</p>
-                  <img className="stars-1" src="./assests/images/stars-45.png" alt="" />
-                </div>
-                <div className="numbers-1">
-                  <p>4.4
-                    <sup>/5</sup>
-                  </p>
-                </div>
+              <div className="numbers-1">
+                <p>4.4
+                  <sup>/5</sup>
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        {/* Review Slider */}
-        <section className="bark-slider">
-          <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1} aria-label="Slide 2" />
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={2} aria-label="Slide 3" />
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <div className="container testi-cont">
-                  <div className="row main-sq" style={{width: '80%', margin: 'auto'}}>
-                    <div className="col-lg-12 ">
-                      <div className="row ">
-                        <div className="col-3 my-auto text-center pt-5">
-                          <div className="inner-testimonial">
-                            <img src="./assests/images/eb-4.svg" alt=""/>
-                          </div>
-                          <div className="clearfix">
-                          </div>
-                          <p className="name-anna">customer<br />1942728</p>
-                        </div>
-                        <div className="col-md-9">
-                          <div className="row Verified-people">
-                            <div className="col-md-9 text-center">
-                              <p>Verified order</p>
-                            </div>
-                            <div className="col-md-3">
-                              <p className="date">Aug 10, 2019</p>
-                            </div>
-                            <div className="col-md-12">
-                              <h3>Paper was written in a timely matter, before the deadline.</h3>
-                              <h6>Edits were made very quickly. I am satisfied with her work and would recommend her services.
-                              </h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="container testi-cont">
-                  <div className="row main-sq" style={{width: '80%', margin: 'auto'}}>
-                    <div className="col-lg-12 ">
-                      <div className="row ">
-                        <div className="col-3 my-auto text-center pt-5">
-                          <div className="inner-testimonial">
-                            <img src="./assests/images/eb-4.svg" alt=""/>
-                          </div>
-                          <div className="clearfix">
-                          </div>
-                          <p className="name-anna">customer<br />1942728</p>
-                        </div>
-                        <div className="col-md-9">
-                          <div className="row Verified-people">
-                            <div className="col-md-9 text-center">
-                              <p>Verified order</p>
-                            </div>
-                            <div className="col-md-3">
-                              <p className="date">Aug 10, 2019</p>
-                            </div>
-                            <div className="col-md-12">
-                              <h3>Paper was written in a timely matter, before the deadline.</h3>
-                              <h6>Edits were made very quickly. I am satisfied with her work and would recommend her services.
-                              </h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="container testi-cont">
-                  <div className="row main-sq" style={{width: '80%', margin: 'auto'}}>
-                    <div className="col-lg-12 ">
-                      <div className="row ">
-                        <div className="col-3 my-auto text-center pt-5">
-                          <div className="inner-testimonial">
-                            <img src="./assests/images/eb-4.svg" alt=""/>
-                          </div>
-                          <div className="clearfix">
-                          </div>
-                          <p className="name-anna">customer<br />1942728</p>
-                        </div>
-                        <div className="col-md-9">
-                          <div className="row Verified-people">
-                            <div className="col-md-9 text-center">
-                              <p>Verified order</p>
-                            </div>
-                            <div className="col-md-3">
-                              <p className="date">Aug 10, 2019</p>
-                            </div>
-                            <div className="col-md-12">
-                              <h3>Paper was written in a timely matter, before the deadline.</h3>
-                              <h6>Edits were made very quickly. I am satisfied with her work and would recommend her services.
-                              </h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="visually-hidden">Next</span>
-            </button>
+        </div>
+      </section>
+      {/* Review Slider */}
+      <section className="bark-slider">
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1} aria-label="Slide 2" />
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={2} aria-label="Slide 3" />
           </div>
-        </section>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="container testi-cont">
+                <div className="row main-sq" style={{ width: '80%', margin: 'auto' }}>
+                  <div className="col-lg-12 ">
+                    <div className="row ">
+                      <div className="col-3 my-auto text-center pt-5">
+                        <div className="inner-testimonial">
+                          <img src="./assests/images/eb-4.svg" alt="" />
+                        </div>
+                        <div className="clearfix">
+                        </div>
+                        <p className="name-anna">customer<br />1942728</p>
+                      </div>
+                      <div className="col-md-9">
+                        <div className="row Verified-people">
+                          <div className="col-md-9 text-center">
+                            <p>Verified order</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="date">Aug 10, 2019</p>
+                          </div>
+                          <div className="col-md-12">
+                            <h3>Paper was written in a timely matter, before the deadline.</h3>
+                            <h6>Edits were made very quickly. I am satisfied with her work and would recommend her services.
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="container testi-cont">
+                <div className="row main-sq" style={{ width: '80%', margin: 'auto' }}>
+                  <div className="col-lg-12 ">
+                    <div className="row ">
+                      <div className="col-3 my-auto text-center pt-5">
+                        <div className="inner-testimonial">
+                          <img src="./assests/images/eb-4.svg" alt="" />
+                        </div>
+                        <div className="clearfix">
+                        </div>
+                        <p className="name-anna">customer<br />1942728</p>
+                      </div>
+                      <div className="col-md-9">
+                        <div className="row Verified-people">
+                          <div className="col-md-9 text-center">
+                            <p>Verified order</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="date">Aug 10, 2019</p>
+                          </div>
+                          <div className="col-md-12">
+                            <h3>Paper was written in a timely matter, before the deadline.</h3>
+                            <h6>Edits were made very quickly. I am satisfied with her work and would recommend her services.
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="container testi-cont">
+                <div className="row main-sq" style={{ width: '80%', margin: 'auto' }}>
+                  <div className="col-lg-12 ">
+                    <div className="row ">
+                      <div className="col-3 my-auto text-center pt-5">
+                        <div className="inner-testimonial">
+                          <img src="./assests/images/eb-4.svg" alt="" />
+                        </div>
+                        <div className="clearfix">
+                        </div>
+                        <p className="name-anna">customer<br />1942728</p>
+                      </div>
+                      <div className="col-md-9">
+                        <div className="row Verified-people">
+                          <div className="col-md-9 text-center">
+                            <p>Verified order</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="date">Aug 10, 2019</p>
+                          </div>
+                          <div className="col-md-12">
+                            <h3>Paper was written in a timely matter, before the deadline.</h3>
+                            <h6>Edits were made very quickly. I am satisfied with her work and would recommend her services.
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true" />
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true" />
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
 
-        <ExpertEditing/>
-        <Contact />
-      
+      <ExpertEditing />
+      <Contact />
+
     </>
   );
 };
 
-const WhatWeDoContent = ({content}) => {
+const WhatWeDoContent = ({ content }) => {
   return (
     <>
-     <div className="col-md-4">
-              <div className="row">
-                <div className="col-md-2">
-                  <img src={content.img} alt={content.title} />
-                </div>
-                <div className="col-md-10">
-                  <h3> {content.title}</h3>
-                  <p>
-                  {content.desc}
+      <div className="col-md-4">
+        <div className="row">
+          <div className="col-md-2">
+            <img src={content.img} alt={content.title} />
+          </div>
+          <div className="col-md-10">
+            <h3> {content.title}</h3>
+            <p>
+              {content.desc}
 
-                  </p>
-                </div>
-              </div>
-            </div>
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
 
-const WhatIsIncludedContent=({content})=>{
-  return(
+const WhatIsIncludedContent = ({ content }) => {
+  return (
     <>
-    <div className="col-lg-3">
-              <div className="faculty">
-                <img src={content.img} alt={content.title}/>
-                <h3>{content.title}</h3>
-                <p>
-                {content.desc}
-                </p>
-              </div>
-            </div>
+      <div className="col-lg-3">
+        <div className="faculty">
+          <img src={content.img} alt={content.title} />
+          <h3>{content.title}</h3>
+          <p>
+            {content.desc}
+          </p>
+        </div>
+      </div>
+    </>
+  )
+}
+const RatingSection = ({ content }) => {
+  return (
+    <>
+      <div className="col-md-3">
+        <img src={content.img} alt="bark.svg" />
+        <div className="bark-star">
+          <p>{content.title}</p>
+          <img className="stars" src={content.img2} alt="stars-45" />
+        </div>
+        <div className="numbers">
+          <p>
+            {content.p}
+            <sup>/{content.sub}</sup>
+          </p>
+        </div>
+      </div>
     </>
   )
 }
