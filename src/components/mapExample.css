@@ -1,0 +1,15 @@
+.container{
+    width: 50%;
+    margin: 10% auto;
+}
+.row {
+    border: 2px solid pink;
+}
+.employe_details {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.hide{
+    display: none;
+}
