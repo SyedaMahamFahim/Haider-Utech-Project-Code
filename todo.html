@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<style>
+    li {
+        list-style: none;
+    }
+
+    .center {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1 class="center">CRUD OPERATION</h1>
+    <ul class="center">
+        <li>C-CREATE</li>
+        <li>R-READ</li>
+        <li>U-UPDATE</li>
+        <li>D-DELETE</li>
+    </ul>
+    <br /><br />
+    <div class="center">
+        <h3>Enter your task</h3>
+        <input type="text" id="task">
+        <button onclick="crudOperation()">Submit</button>
+
+        <h1> All Task</h1>
+        <p id="display-array"></p>
+        <ul id="task-list">
+
+        </ul>
+
+    </div>
+</body>
+<script>
+    // Create
+    let allTasks = []
+
+    const crudOperation = () => {
+
+        let getTask = document.getElementById('task').value
+        if (!getTask) {
+            return alert("Kindly,enter the task")
+        }
+        else {
+            allTasks.push(getTask);
+            var li = document.createElement("li");   // <li> </li>
+            var t = document.createTextNode(getTask+"  "+ "D"); //  TASK 
+            li.appendChild(t);   // <li> TASK </li>
+            document.getElementById("task-list").appendChild(li); // <ul> <li> TASK </li> </ul> 
+            getTask = document.getElementById('task').value = ""
+            console.log(allTasks)
+           
+
+            
+
+
+
+        }
+
+    }
+
+
+
+</script>
+
+</html>
