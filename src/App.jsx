@@ -1,18 +1,12 @@
-import './root.css'
-// import UseStateExample from './components/UseStateExample';
-// import MapExample from './components/MapExample';
-// import LoginSystem from './components/LoginSystem';
-import AddAndRemoveEmploye from './components/AddAndRemoveEmploye';
+import Toggle from "./components/Revision/Toggle";
+import "./root.css";
+
 function App() {
   return (
     <>
-{/* <UseStateExample /> */}
-{/* <MapExample/>
-<LoginSystem/> */}
-<AddAndRemoveEmploye/>
-
+      <Toggle/>
     </>
-  )
+  );
 }
 
 export default App;
