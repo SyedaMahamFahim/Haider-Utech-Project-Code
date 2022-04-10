@@ -4,8 +4,9 @@ import React, { useState } from "react";
 
 const Toggle = () => {
   const [toggle, setToggle] = useState(false);
+  
   // false opposite == true // a/c to haider
-
+// var toggle=false 
   // toggle = false
 
   //toggle == true // 1st time clicked
@@ -15,17 +16,24 @@ const Toggle = () => {
 
   //opposite of toggle value
 
-  // !toggle
+  // !toggle === opposite of toggle value 
 
   const handleToggle = () => {
-    setToggle(!toggle);
+  setToggle(!toggle);
   };
+
+
+  
 
 //   if (toggle === true) {
 //     ("Gamer Haider");
 //   } else {
 //     ("Haider");
 //   }
+// ? === if 
+// : == esle 
+  
+
   // ?== if condition
   // : else
 
@@ -40,7 +48,12 @@ const Toggle = () => {
     <>
       <h1>Toggle</h1>
 
-      <p>{toggle===true ? "Gamer Haider" : "Haider"}</p>
+      
+      <p>
+        {
+          toggle === true ? 'Gamer Haider' : 'Haider'
+        }
+      </p>
       <button onClick={handleToggle}>Change me</button>
     </>
   );
