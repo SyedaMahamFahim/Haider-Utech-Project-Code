@@ -1,0 +1,9 @@
+.course_detail{
+        background-image: url('../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;  
+}
+.white-text{
+    color: white !important;
+}

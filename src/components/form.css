@@ -1,0 +1,12 @@
+.registration-btn{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+.registration-btn button{
+    margin: 20px;
+}

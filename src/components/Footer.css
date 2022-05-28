@@ -1,0 +1,23 @@
+footer{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    /* position: fixed; */
+   
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgb(240, 44, 18);
+    font-family: monospace;
+    transition: .5s;
+}
