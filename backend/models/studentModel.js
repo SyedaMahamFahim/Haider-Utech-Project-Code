@@ -51,7 +51,3 @@ const studentModel = mongoose.Schema({
 
 
 module.exports=mongoose.model("Student",studentModel);
-
-
-// import , export by defualt
-// const required -- module.export 
