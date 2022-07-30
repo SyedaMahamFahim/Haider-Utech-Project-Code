@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(express.urlencoded( {extended: true} ))
 
 
-app.use("/v1/students",studentRoutes)
+app.use("/api/v1/students",studentRoutes)
 
 
 module.exports = app;

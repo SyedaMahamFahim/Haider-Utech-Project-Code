@@ -11,6 +11,7 @@ exports.createStudent = catchAsyncError(async (req, res, next) => {
   });
 });
 
+// Get All Students
 exports.allStudents = catchAsyncError(async (req, res, next) => {
     const students = await Student.find();
     res.status(201).json({
@@ -19,3 +20,20 @@ exports.allStudents = catchAsyncError(async (req, res, next) => {
     });
   });
   
+// Get Single Student
+exports.singleStudent= catchAsyncError(async (req, res, next) => {
+  const student = await Student.findById(req.params.id);
+  res.status(201).json({
+    success:true,
+    student
+  });
+});
+
+// Get Single Student
+exports.removeSingleStudent= catchAsyncError(async (req, res, next) => {
+  await Student.findByIdAndDelete(req.params.id);
+  res.status(201).json({
+    success:true,
+    message:"Student Removed Successfully"
+  });
+});
