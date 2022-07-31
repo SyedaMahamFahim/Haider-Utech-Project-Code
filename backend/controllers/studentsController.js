@@ -37,3 +37,13 @@ exports.removeSingleStudent= catchAsyncError(async (req, res, next) => {
     message:"Student Removed Successfully"
   });
 });
+
+// Get Single Student
+exports.updateSingleStudent= catchAsyncError(async (req, res, next) => {
+ const student= await Student.findByIdAndUpdate(req.params.id,req.body,{new:true});
+  res.status(201).json({
+    success:true,
+    message:"Student Record Updated Successfully",
+    student
+  });
+});
