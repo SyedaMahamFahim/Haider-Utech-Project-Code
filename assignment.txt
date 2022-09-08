@@ -1,0 +1,5 @@
+Q1)Creat a list of students (atleast 5).Define their name,roll no, section and class.
+Q2)By using the list of Q1 console the 2nd student name and roll no.
+Q3)use the correct declartion to assign the google.com url ( which one must be use let,var,const ?)
+Q4)Add two number( x and y where y is 10 times of x ) then subtract it from 10 and then divide it by 7 
+Q5)Toggle the text in console
