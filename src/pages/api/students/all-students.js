@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import connectDatabase from "../../../utils/connectDatabase";
-import {Student} from "../../../model/Student";
+import connectDatabase from "../../../database/connectDatabase";
+import { Student } from "../../../model/Student";
 
 export default async function handler(req, res) {
   await connectDatabase();
@@ -17,3 +17,9 @@ export default async function handler(req, res) {
     res.status(500).json({ success: false, message: error.message });
   }
 }
+
+
+
+//  id ---> delete 
+// id ---> update
+// id ---> get
