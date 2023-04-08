@@ -1,0 +1,15 @@
+1- sanity.io 
+npm install -g @sanity/cli
+sanity init
+
+2- sanity start
+3- create schema
+4- sanity manage
+5- add http://localhost:3000 to the CORS origin in sanity 
+6- npm install @sanity/client 
+fetch courses from sanity.io
+7- render them in screen
+
+
+
+ 

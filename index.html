@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const array = [
+	{
+		username: "john",
+		team: "red",
+		score: 5,
+		items: ["ball", "book", "pen"]
+	},
+	{
+		username: "becky",
+		team: "blue",
+		score: 10,
+		items: ["tape", "backpack", "pen"]
+	},
+	{
+		username: "susy",
+		team: "red",
+		score: 55,
+		items: ["ball", "eraser", "pen"]
+	},
+	{
+		username: "tyson",
+		team: "green",
+		score: 1,
+		items: ["book", "pen"]
+	},
+
+];
+
+
+// S
+
+// // Exxtracting Items
+// const answer0 = array.map(user1 => user1.items);
+// console.log(answer0)
+// // Only adding !! to items giving a complex array
+// const mapArrayArrow3 = array.map(user => user.items
+// 							.map(item => item + "!!"));
+// console.log(mapArrayArrow3)
+// // It can also be done as 
+// const ans = array.map(user1 => user1.items 
+//                     .map(item => {return item  + "!!"}));
+//  console.log(ans);
+
+
+// //Extracting Items
+//  const answer1 = array.map(user1 => user1.items) 
+//                     .map(item => {return item  + "!!!!"});
+//  console.log(answer1);
+
+
+// // Performing the above operation in two steps
+// //Step1
+// const step1 = array.map(user1 => user1.items);
+// console.log(step1);
+// //Step2
+//  const step2 = step1.map(item => {return item  + "!!!!"});
+// console.log(step2);
+
+
+
+
+
+
+
+
+
+const details={
+    name:"essa",
+    class:"2nd year"
+}
+
+console.log("before editing ", details.class)
+
+details.class="3rd year"
+
+console.log("after editing ", details.class)
+
+
+
+// Double Mapping
+const answer = array.map(user => {
+    user.items = user.items.map(item => {return item + "!"});
+	                return user;
+})
+console.log(answer);
+
+//Explanation this just add one ? at the last
+// const explanation = array.map(user => {
+//     user.items = user.items + "?";
+//     return user});
+// console.log(explanation)
+//Can also be done as
+// const explanation1 = array.map(user => {
+//     user.items = user.items.map(i =>  i + "?");
+//     return user});
+// console.log(explanation1)
+
+
+
+
+// const answerm = array.map((element,index)=>console.log(`index number ${index}  data ${element}`))
+</script>
+</html>
